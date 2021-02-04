@@ -76,8 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				EF0A038F25CCA39000C44E93 /* PracticeModularDesign.h */,
-				EF0A03A825CCA76200C44E93 /* FeedItem.swift */,
-				EF0A03AC25CCA86000C44E93 /* FeedLoader.swift */,
+				EF0A03B025CCA92E00C44E93 /* Feed Feature */,
 				EF0A039025CCA39000C44E93 /* Info.plist */,
 			);
 			path = PracticeModularDesign;
@@ -90,6 +89,15 @@
 				EF0A039C25CCA39000C44E93 /* Info.plist */,
 			);
 			path = PracticeModularDesignTests;
+			sourceTree = "<group>";
+		};
+		EF0A03B025CCA92E00C44E93 /* Feed Feature */ = {
+			isa = PBXGroup;
+			children = (
+				EF0A03A825CCA76200C44E93 /* FeedItem.swift */,
+				EF0A03AC25CCA86000C44E93 /* FeedLoader.swift */,
+			);
+			path = "Feed Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
