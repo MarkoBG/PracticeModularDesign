@@ -10,6 +10,7 @@
 		EF0A039625CCA39000C44E93 /* PracticeModularDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0A038C25CCA39000C44E93 /* PracticeModularDesign.framework */; };
 		EF0A039B25CCA39000C44E93 /* PracticeModularDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A039A25CCA39000C44E93 /* PracticeModularDesignTests.swift */; };
 		EF0A039D25CCA39000C44E93 /* PracticeModularDesign.h in Headers */ = {isa = PBXBuildFile; fileRef = EF0A038F25CCA39000C44E93 /* PracticeModularDesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF0A03A925CCA76200C44E93 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A03A825CCA76200C44E93 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		EF0A039525CCA39000C44E93 /* PracticeModularDesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeModularDesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0A039A25CCA39000C44E93 /* PracticeModularDesignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeModularDesignTests.swift; sourceTree = "<group>"; };
 		EF0A039C25CCA39000C44E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0A03A825CCA76200C44E93 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				EF0A038F25CCA39000C44E93 /* PracticeModularDesign.h */,
+				EF0A03A825CCA76200C44E93 /* FeedItem.swift */,
 				EF0A039025CCA39000C44E93 /* Info.plist */,
 			);
 			path = PracticeModularDesign;
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					EF0A038B25CCA39000C44E93 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					EF0A039425CCA39000C44E93 = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0A03A925CCA76200C44E93 /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		EF0A03A125CCA39000C44E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MT.PracticeModularDesign;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -364,6 +371,7 @@
 		EF0A03A225CCA39000C44E93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -388,6 +396,7 @@
 		EF0A03A425CCA39000C44E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = G8H6DP9BPD;
@@ -406,6 +415,7 @@
 		EF0A03A525CCA39000C44E93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = G8H6DP9BPD;
