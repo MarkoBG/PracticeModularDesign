@@ -12,6 +12,7 @@
 		EF0A039D25CCA39000C44E93 /* PracticeModularDesign.h in Headers */ = {isa = PBXBuildFile; fileRef = EF0A038F25CCA39000C44E93 /* PracticeModularDesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF0A03A925CCA76200C44E93 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A03A825CCA76200C44E93 /* FeedItem.swift */; };
 		EF0A03AD25CCA86000C44E93 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A03AC25CCA86000C44E93 /* FeedLoader.swift */; };
+		EF7FFBCD25CDEA9D00AEF283 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FFBCC25CDEA9D00AEF283 /* RemoteFeedLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		EF0A039C25CCA39000C44E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF0A03A825CCA76200C44E93 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		EF0A03AC25CCA86000C44E93 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		EF7FFBCC25CDEA9D00AEF283 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				EF0A039A25CCA39000C44E93 /* PracticeModularDesignTests.swift */,
 				EF0A039C25CCA39000C44E93 /* Info.plist */,
+				EF7FFBCC25CDEA9D00AEF283 /* RemoteFeedLoaderTests.swift */,
 			);
 			path = PracticeModularDesignTests;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7FFBCD25CDEA9D00AEF283 /* RemoteFeedLoaderTests.swift in Sources */,
 				EF0A039B25CCA39000C44E93 /* PracticeModularDesignTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
