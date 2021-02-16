@@ -30,7 +30,7 @@ class URLSessionHTTPClientTests: XCTestCase {
         URLProtocolStub.startInterceptingRequest()
         let url = URL(string: "https://any-url.com")!
         let error = NSError(domain: "Error", code: 1)
-        URLProtocolStub.stub(url: url, data: nil, response: nil, error: error)
+        URLProtocolStub.stub(data: nil, response: nil, error: error)
         
         let sut = URLSessionHTTPClient()
         
@@ -56,7 +56,7 @@ class URLSessionHTTPClientTests: XCTestCase {
     
     private class URLProtocolStub: URLProtocol {
         
-        private static var stubs = [URL: Stub]()
+        private static var stub: Stub?
         
         private struct Stub {
             let data: Data?
@@ -64,8 +64,8 @@ class URLSessionHTTPClientTests: XCTestCase {
             let error: Error?
         }
         
-        static func stub(url: URL, data: Data?, response: HTTPURLResponse?, error: Error?) {
-            stubs[url] = Stub(data: data, response: response, error: error)
+        static func stub(data: Data?, response: HTTPURLResponse?, error: Error?) {
+            stub = Stub(data: data, response: response, error: error)
         }
         
         static func startInterceptingRequest() {
@@ -74,12 +74,22 @@ class URLSessionHTTPClientTests: XCTestCase {
         
         static func stopInterceptingRequest() {
             URLProtocol.unregisterClass(URLProtocolStub.self)
-            stubs = [:]
+            stub = nil
         }
         
         override class func canInit(with request: URLRequest) -> Bool {
-            guard let url = request.url else { return false }
-            return URLProtocolStub.stubs[url] != nil
+            // this way we only stub specific URL
+            // and if the URL does not match with request.url
+            // we are telling the URL Loading System that we are not handling this request
+            // so we are going through the normal URL handling, makeing the reall HTTP request
+            
+            // guard let url = request.url else { return false }
+            // return URLProtocolStub.stubs[url] != nil
+            
+            // we can improve this stubbing mechanisam and handling all requests
+            // so we will have separately tests to check does the URLs matching and does the request fail
+            // if we return true that means that we want to intercept all HTTP requests
+            return true
         }
 
         override class func canonicalRequest(for request: URLRequest) -> URLRequest {
@@ -87,19 +97,16 @@ class URLSessionHTTPClientTests: XCTestCase {
         }
         
         override func startLoading() {
-            guard let url = request.url, let stub = URLProtocolStub.stubs[url] else {
-                return
-            }
-            
-            if let data = stub.data {
+ 
+            if let data = URLProtocolStub.stub?.data {
                 client?.urlProtocol(self, didLoad: data)
             }
             
-            if let response = stub.response {
+            if let response = URLProtocolStub.stub?.response {
                 client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
             }
             
-            if let error = stub.error {
+            if let error = URLProtocolStub.stub?.error {
                 client?.urlProtocol(self, didFailWithError: error)
             }
             
