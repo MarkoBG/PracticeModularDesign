@@ -26,6 +26,26 @@ class URLSessionHTTPClient {
 
 class URLSessionHTTPClientTests: XCTestCase {
 
+    func test_getFromURL_performsGETRequestWithURL() {
+        URLProtocolStub.startInterceptingRequest()
+        let url = URL(string: "https://any-url.com")!
+        
+        let exp = expectation(description: "Wait for request")
+        
+        URLSessionHTTPClient().get(from: url) { _ in }
+        
+        URLProtocolStub.observeRequests { request in
+            XCTAssertEqual(request.url, url)
+            XCTAssertEqual(request.httpMethod, "GET")
+            
+            exp.fulfill()
+        }
+        
+        wait(for: [exp], timeout: 1.0)
+        
+        URLProtocolStub.stopInterceptingRequest()
+    }
+    
     func test_getFromURL_failsOnRequestError() {
         URLProtocolStub.startInterceptingRequest()
         let url = URL(string: "https://any-url.com")!
@@ -57,11 +77,16 @@ class URLSessionHTTPClientTests: XCTestCase {
     private class URLProtocolStub: URLProtocol {
         
         private static var stub: Stub?
+        private static var requestObserver: ((URLRequest) -> Void)?
         
         private struct Stub {
             let data: Data?
             let response: HTTPURLResponse?
             let error: Error?
+        }
+        
+        static func observeRequests(observer: @escaping(URLRequest) -> Void) {
+            requestObserver = observer
         }
         
         static func stub(data: Data?, response: HTTPURLResponse?, error: Error?) {
@@ -75,6 +100,7 @@ class URLSessionHTTPClientTests: XCTestCase {
         static func stopInterceptingRequest() {
             URLProtocol.unregisterClass(URLProtocolStub.self)
             stub = nil
+            requestObserver = nil
         }
         
         override class func canInit(with request: URLRequest) -> Bool {
@@ -89,6 +115,9 @@ class URLSessionHTTPClientTests: XCTestCase {
             // we can improve this stubbing mechanisam and handling all requests
             // so we will have separately tests to check does the URLs matching and does the request fail
             // if we return true that means that we want to intercept all HTTP requests
+            
+            requestObserver?(request)
+            
             return true
         }
 
