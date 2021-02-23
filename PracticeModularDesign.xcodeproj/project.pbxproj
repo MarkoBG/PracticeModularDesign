@@ -19,10 +19,19 @@
 		EFED4F3425D951C4003AE2E7 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED4F3325D951C4003AE2E7 /* URLSessionHTTPClientTests.swift */; };
 		EFED4F4125DBEB49003AE2E7 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED4F4025DBEB49003AE2E7 /* XCTestCase+MemoryLeakTracking.swift */; };
 		EFED4F4725DF0063003AE2E7 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED4F4625DF0063003AE2E7 /* URLSessionHTTPClient.swift */; };
+		EFED4F5125E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED4F5025E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.swift */; };
+		EFED4F5325E57551003AE2E7 /* PracticeModularDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0A038C25CCA39000C44E93 /* PracticeModularDesign.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		EF0A039725CCA39000C44E93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF0A038325CCA39000C44E93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF0A038B25CCA39000C44E93;
+			remoteInfo = PracticeModularDesign;
+		};
+		EFED4F5425E57551003AE2E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EF0A038325CCA39000C44E93 /* Project object */;
 			proxyType = 1;
@@ -47,6 +56,9 @@
 		EFED4F3325D951C4003AE2E7 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		EFED4F4025DBEB49003AE2E7 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		EFED4F4625DF0063003AE2E7 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		EFED4F4E25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeModularDesignAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFED4F5025E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeModularDesignAPIEndToEndTests.swift; sourceTree = "<group>"; };
+		EFED4F5225E57551003AE2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFED4F4B25E57551003AE2E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFED4F5325E57551003AE2E7 /* PracticeModularDesign.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +93,7 @@
 			children = (
 				EF0A038E25CCA39000C44E93 /* PracticeModularDesign */,
 				EF0A039925CCA39000C44E93 /* PracticeModularDesignTests */,
+				EFED4F4F25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests */,
 				EF0A038D25CCA39000C44E93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +103,7 @@
 			children = (
 				EF0A038C25CCA39000C44E93 /* PracticeModularDesign.framework */,
 				EF0A039525CCA39000C44E93 /* PracticeModularDesignTests.xctest */,
+				EFED4F4E25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +167,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		EFED4F4F25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFED4F5025E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.swift */,
+				EFED4F5225E57551003AE2E7 /* Info.plist */,
+			);
+			path = PracticeModularDesignAPIEndToEndTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -195,6 +226,24 @@
 			productReference = EF0A039525CCA39000C44E93 /* PracticeModularDesignTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EFED4F4D25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFED4F5625E57551003AE2E7 /* Build configuration list for PBXNativeTarget "PracticeModularDesignAPIEndToEndTests" */;
+			buildPhases = (
+				EFED4F4A25E57551003AE2E7 /* Sources */,
+				EFED4F4B25E57551003AE2E7 /* Frameworks */,
+				EFED4F4C25E57551003AE2E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFED4F5525E57551003AE2E7 /* PBXTargetDependency */,
+			);
+			name = PracticeModularDesignAPIEndToEndTests;
+			productName = PracticeModularDesignAPIEndToEndTests;
+			productReference = EFED4F4E25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +258,9 @@
 						LastSwiftMigration = 1220;
 					};
 					EF0A039425CCA39000C44E93 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					EFED4F4D25E57551003AE2E7 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -228,6 +280,7 @@
 			targets = (
 				EF0A038B25CCA39000C44E93 /* PracticeModularDesign */,
 				EF0A039425CCA39000C44E93 /* PracticeModularDesignTests */,
+				EFED4F4D25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,6 +294,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EF0A039325CCA39000C44E93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFED4F4C25E57551003AE2E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -274,6 +334,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFED4F4A25E57551003AE2E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFED4F5125E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -281,6 +349,11 @@
 			isa = PBXTargetDependency;
 			target = EF0A038B25CCA39000C44E93 /* PracticeModularDesign */;
 			targetProxy = EF0A039725CCA39000C44E93 /* PBXContainerItemProxy */;
+		};
+		EFED4F5525E57551003AE2E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF0A038B25CCA39000C44E93 /* PracticeModularDesign */;
+			targetProxy = EFED4F5425E57551003AE2E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -495,6 +568,42 @@
 			};
 			name = Release;
 		};
+		EFED4F5725E57551003AE2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G8H6DP9BPD;
+				INFOPLIST_FILE = PracticeModularDesignAPIEndToEndTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MT.PracticeModularDesignAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EFED4F5825E57551003AE2E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G8H6DP9BPD;
+				INFOPLIST_FILE = PracticeModularDesignAPIEndToEndTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MT.PracticeModularDesignAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -521,6 +630,15 @@
 			buildConfigurations = (
 				EF0A03A425CCA39000C44E93 /* Debug */,
 				EF0A03A525CCA39000C44E93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFED4F5625E57551003AE2E7 /* Build configuration list for PBXNativeTarget "PracticeModularDesignAPIEndToEndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFED4F5725E57551003AE2E7 /* Debug */,
+				EFED4F5825E57551003AE2E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
