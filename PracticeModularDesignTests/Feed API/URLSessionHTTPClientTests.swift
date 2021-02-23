@@ -194,7 +194,7 @@ class URLSessionHTTPClientTests: XCTestCase {
             // so we will have separately tests to check does the URLs matching and does the request fail
             // if we return true that means that we want to intercept all HTTP requests
             
-            requestObserver?(request)
+            
             
             return true
         }
@@ -204,6 +204,11 @@ class URLSessionHTTPClientTests: XCTestCase {
         }
         
         override func startLoading() {
+            
+            if let requestObserver = URLProtocolStub.requestObserver {
+                client?.urlProtocolDidFinishLoading(self)
+                return requestObserver(request)
+            }
  
             if let data = URLProtocolStub.stub?.data {
                 client?.urlProtocol(self, didLoad: data)
