@@ -10,10 +10,29 @@
 		EF0A039625CCA39000C44E93 /* PracticeModularDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0A038C25CCA39000C44E93 /* PracticeModularDesign.framework */; };
 		EF0A039B25CCA39000C44E93 /* PracticeModularDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A039A25CCA39000C44E93 /* PracticeModularDesignTests.swift */; };
 		EF0A039D25CCA39000C44E93 /* PracticeModularDesign.h in Headers */ = {isa = PBXBuildFile; fileRef = EF0A038F25CCA39000C44E93 /* PracticeModularDesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF0A03A925CCA76200C44E93 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A03A825CCA76200C44E93 /* FeedItem.swift */; };
+		EF0A03AD25CCA86000C44E93 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A03AC25CCA86000C44E93 /* FeedLoader.swift */; };
+		EF7FFBCD25CDEA9D00AEF283 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FFBCC25CDEA9D00AEF283 /* RemoteFeedLoaderTests.swift */; };
+		EF7FFBD225CDF41900AEF283 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FFBD125CDF41900AEF283 /* RemoteFeedLoader.swift */; };
+		EF7FFBD625D1D5C400AEF283 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FFBD525D1D5C400AEF283 /* HTTPClient.swift */; };
+		EF7FFBDA25D1D64600AEF283 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FFBD925D1D64600AEF283 /* FeedItemsMapper.swift */; };
+		EFED4F3425D951C4003AE2E7 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED4F3325D951C4003AE2E7 /* URLSessionHTTPClientTests.swift */; };
+		EFED4F4125DBEB49003AE2E7 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED4F4025DBEB49003AE2E7 /* XCTestCase+MemoryLeakTracking.swift */; };
+		EFED4F4725DF0063003AE2E7 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED4F4625DF0063003AE2E7 /* URLSessionHTTPClient.swift */; };
+		EFED4F5125E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED4F5025E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.swift */; };
+		EFED4F5325E57551003AE2E7 /* PracticeModularDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0A038C25CCA39000C44E93 /* PracticeModularDesign.framework */; };
+		EFED4F5C25E57F14003AE2E7 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED4F4025DBEB49003AE2E7 /* XCTestCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		EF0A039725CCA39000C44E93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF0A038325CCA39000C44E93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF0A038B25CCA39000C44E93;
+			remoteInfo = PracticeModularDesign;
+		};
+		EFED4F5425E57551003AE2E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EF0A038325CCA39000C44E93 /* Project object */;
 			proxyType = 1;
@@ -29,6 +48,18 @@
 		EF0A039525CCA39000C44E93 /* PracticeModularDesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeModularDesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0A039A25CCA39000C44E93 /* PracticeModularDesignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeModularDesignTests.swift; sourceTree = "<group>"; };
 		EF0A039C25CCA39000C44E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF0A03A825CCA76200C44E93 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		EF0A03AC25CCA86000C44E93 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		EF7FFBCC25CDEA9D00AEF283 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
+		EF7FFBD125CDF41900AEF283 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
+		EF7FFBD525D1D5C400AEF283 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		EF7FFBD925D1D64600AEF283 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
+		EFED4F3325D951C4003AE2E7 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
+		EFED4F4025DBEB49003AE2E7 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		EFED4F4625DF0063003AE2E7 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		EFED4F4E25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeModularDesignAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFED4F5025E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeModularDesignAPIEndToEndTests.swift; sourceTree = "<group>"; };
+		EFED4F5225E57551003AE2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +78,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFED4F4B25E57551003AE2E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFED4F5325E57551003AE2E7 /* PracticeModularDesign.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +94,7 @@
 			children = (
 				EF0A038E25CCA39000C44E93 /* PracticeModularDesign */,
 				EF0A039925CCA39000C44E93 /* PracticeModularDesignTests */,
+				EFED4F4F25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests */,
 				EF0A038D25CCA39000C44E93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +104,7 @@
 			children = (
 				EF0A038C25CCA39000C44E93 /* PracticeModularDesign.framework */,
 				EF0A039525CCA39000C44E93 /* PracticeModularDesignTests.xctest */,
+				EFED4F4E25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,7 +112,9 @@
 		EF0A038E25CCA39000C44E93 /* PracticeModularDesign */ = {
 			isa = PBXGroup;
 			children = (
+				EF7FFBD025CDF3F600AEF283 /* Feed API */,
 				EF0A038F25CCA39000C44E93 /* PracticeModularDesign.h */,
+				EF0A03B025CCA92E00C44E93 /* Feed Feature */,
 				EF0A039025CCA39000C44E93 /* Info.plist */,
 			);
 			path = PracticeModularDesign;
@@ -82,8 +125,56 @@
 			children = (
 				EF0A039A25CCA39000C44E93 /* PracticeModularDesignTests.swift */,
 				EF0A039C25CCA39000C44E93 /* Info.plist */,
+				EF7FFBDD25D1E1D400AEF283 /* Feed API */,
 			);
 			path = PracticeModularDesignTests;
+			sourceTree = "<group>";
+		};
+		EF0A03B025CCA92E00C44E93 /* Feed Feature */ = {
+			isa = PBXGroup;
+			children = (
+				EF0A03A825CCA76200C44E93 /* FeedItem.swift */,
+				EF0A03AC25CCA86000C44E93 /* FeedLoader.swift */,
+			);
+			path = "Feed Feature";
+			sourceTree = "<group>";
+		};
+		EF7FFBD025CDF3F600AEF283 /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				EF7FFBD125CDF41900AEF283 /* RemoteFeedLoader.swift */,
+				EF7FFBD525D1D5C400AEF283 /* HTTPClient.swift */,
+				EF7FFBD925D1D64600AEF283 /* FeedItemsMapper.swift */,
+				EFED4F4625DF0063003AE2E7 /* URLSessionHTTPClient.swift */,
+			);
+			path = "Feed API";
+			sourceTree = "<group>";
+		};
+		EF7FFBDD25D1E1D400AEF283 /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				EFED4F3F25DBEB2E003AE2E7 /* Helpers */,
+				EF7FFBCC25CDEA9D00AEF283 /* RemoteFeedLoaderTests.swift */,
+				EFED4F3325D951C4003AE2E7 /* URLSessionHTTPClientTests.swift */,
+			);
+			path = "Feed API";
+			sourceTree = "<group>";
+		};
+		EFED4F3F25DBEB2E003AE2E7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EFED4F4025DBEB49003AE2E7 /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EFED4F4F25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFED4F5025E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.swift */,
+				EFED4F5225E57551003AE2E7 /* Info.plist */,
+			);
+			path = PracticeModularDesignAPIEndToEndTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +227,24 @@
 			productReference = EF0A039525CCA39000C44E93 /* PracticeModularDesignTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EFED4F4D25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFED4F5625E57551003AE2E7 /* Build configuration list for PBXNativeTarget "PracticeModularDesignAPIEndToEndTests" */;
+			buildPhases = (
+				EFED4F4A25E57551003AE2E7 /* Sources */,
+				EFED4F4B25E57551003AE2E7 /* Frameworks */,
+				EFED4F4C25E57551003AE2E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFED4F5525E57551003AE2E7 /* PBXTargetDependency */,
+			);
+			name = PracticeModularDesignAPIEndToEndTests;
+			productName = PracticeModularDesignAPIEndToEndTests;
+			productReference = EFED4F4E25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,8 +256,12 @@
 				TargetAttributes = {
 					EF0A038B25CCA39000C44E93 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					EF0A039425CCA39000C44E93 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					EFED4F4D25E57551003AE2E7 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -168,6 +281,7 @@
 			targets = (
 				EF0A038B25CCA39000C44E93 /* PracticeModularDesign */,
 				EF0A039425CCA39000C44E93 /* PracticeModularDesignTests */,
+				EFED4F4D25E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +301,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFED4F4C25E57551003AE2E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,6 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7FFBDA25D1D64600AEF283 /* FeedItemsMapper.swift in Sources */,
+				EF0A03AD25CCA86000C44E93 /* FeedLoader.swift in Sources */,
+				EF7FFBD225CDF41900AEF283 /* RemoteFeedLoader.swift in Sources */,
+				EF7FFBD625D1D5C400AEF283 /* HTTPClient.swift in Sources */,
+				EF0A03A925CCA76200C44E93 /* FeedItem.swift in Sources */,
+				EFED4F4725DF0063003AE2E7 /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +328,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7FFBCD25CDEA9D00AEF283 /* RemoteFeedLoaderTests.swift in Sources */,
+				EFED4F4125DBEB49003AE2E7 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				EFED4F3425D951C4003AE2E7 /* URLSessionHTTPClientTests.swift in Sources */,
 				EF0A039B25CCA39000C44E93 /* PracticeModularDesignTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFED4F4A25E57551003AE2E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFED4F5125E57551003AE2E7 /* PracticeModularDesignAPIEndToEndTests.swift in Sources */,
+				EFED4F5C25E57F14003AE2E7 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +351,11 @@
 			isa = PBXTargetDependency;
 			target = EF0A038B25CCA39000C44E93 /* PracticeModularDesign */;
 			targetProxy = EF0A039725CCA39000C44E93 /* PBXContainerItemProxy */;
+		};
+		EFED4F5525E57551003AE2E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF0A038B25CCA39000C44E93 /* PracticeModularDesign */;
+			targetProxy = EFED4F5425E57551003AE2E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -268,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -340,6 +484,7 @@
 		EF0A03A125CCA39000C44E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -357,6 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MT.PracticeModularDesign;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -364,6 +510,7 @@
 		EF0A03A225CCA39000C44E93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -388,6 +535,7 @@
 		EF0A03A425CCA39000C44E93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = G8H6DP9BPD;
@@ -406,6 +554,7 @@
 		EF0A03A525CCA39000C44E93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = G8H6DP9BPD;
@@ -416,6 +565,42 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MT.PracticeModularDesignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EFED4F5725E57551003AE2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G8H6DP9BPD;
+				INFOPLIST_FILE = PracticeModularDesignAPIEndToEndTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MT.PracticeModularDesignAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EFED4F5825E57551003AE2E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = G8H6DP9BPD;
+				INFOPLIST_FILE = PracticeModularDesignAPIEndToEndTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MT.PracticeModularDesignAPIEndToEndTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -447,6 +632,15 @@
 			buildConfigurations = (
 				EF0A03A425CCA39000C44E93 /* Debug */,
 				EF0A03A525CCA39000C44E93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFED4F5625E57551003AE2E7 /* Build configuration list for PBXNativeTarget "PracticeModularDesignAPIEndToEndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFED4F5725E57551003AE2E7 /* Debug */,
+				EFED4F5825E57551003AE2E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
